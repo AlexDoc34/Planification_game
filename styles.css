@@ -1,9 +1,9 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
     margin: 0;
     padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 .container {
@@ -15,38 +15,55 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
+h1 {
     text-align: center;
     color: #007BFF;
 }
 
-#dashboard {
+#stats {
     margin-bottom: 20px;
-    text-align: center;
+}
+
+#stats p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+#actions {
+    margin-bottom: 20px;
+}
+
+#actions h2 {
+    color: #007BFF;
 }
 
 #actions button {
     display: block;
-    margin: 10px auto;
-    padding: 10px 20px;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
     font-size: 16px;
     background-color: #007BFF;
-    color: #fff;
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-#actions button:hover {
-    background-color: #0056b3;
+#actions button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+#logContainer {
+    margin-top: 20px;
 }
 
 #log {
     background-color: #f9f9f9;
     padding: 10px;
     border-radius: 5px;
-    margin-top: 20px;
-    max-height: 300px;
-    overflow-y: auto;
     border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
 }
