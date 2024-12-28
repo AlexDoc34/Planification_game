@@ -1,3 +1,4 @@
+console.log("script.js loaded");
 let budget = 50000;
 let time = 30;
 let satisfaction = 50;
