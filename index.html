@@ -3,32 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equans Project Planning Game</title>
+    <title>Equans Project Planner</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Equans Project Planning Game</h1>
-        
-        <!-- Dashboard -->
-        <div id="dashboard">
-            <p><strong>Budget :</strong> <span id="budget">50000</span>€</p>
-            <p><strong>Temps Restant :</strong> <span id="time">30</span> jours</p>
-            <p><strong>Satisfaction Client :</strong> <span id="satisfaction">50</span>%</p>
+        <h1>Equans Project Planner</h1>
+
+        <!-- Tableau des statistiques -->
+        <div id="stats">
+            <p><strong>Budget :</strong> <span id="budget">50,000€</span></p>
+            <p><strong>Temps Restant :</strong> <span id="time">30 jours</span></p>
+            <p><strong>Satisfaction Client :</strong> <span id="satisfaction">50%</span></p>
         </div>
 
-        <!-- Action Buttons -->
-        <h2>Actions</h2>
+        <!-- Actions principales -->
         <div id="actions">
+            <h2>Actions</h2>
             <button onclick="reactToEvent()">Réagir à un Aléa</button>
             <button id="planBtn" onclick="startPlanning()" disabled>Planifier le Projet (10 000€, 5 jours)</button>
             <button id="manageTasksBtn" onclick="manageTasks()" disabled>Gérer les Tâches (15 000€, 7 jours)</button>
         </div>
 
-        <!-- Event Log -->
-        <h2>Journal des Événements</h2>
-        <div id="log"></div>
+        <!-- Journal des événements -->
+        <div id="logContainer">
+            <h2>Journal des Événements</h2>
+            <div id="log"></div>
+        </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
